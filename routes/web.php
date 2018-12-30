@@ -21,3 +21,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', 'Admin@index')->name('admin');
 
+
+// Articel demo https://hdtuto.com/article/how-to-implement-datatables-in-laravel-57
+
+Route::get('my-datatables', 'MyDatatablesController@index');
+
+Route::get('get-data-my-datatables', ['as'=>'get.data','uses'=>'MyDatatablesController@getData']);
+
+
+
