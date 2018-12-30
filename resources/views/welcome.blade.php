@@ -86,7 +86,7 @@
 
                 <div class="links">
                     <a href="{{ URL::to('/') }}/my-datatables">Datatable</a>
-                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="{{ URL::to('/') }}/posts">Posts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>

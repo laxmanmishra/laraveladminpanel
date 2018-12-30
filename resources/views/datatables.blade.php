@@ -1,7 +1,7 @@
     @extends('layouts.app')
 
     @section('styles')
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
     @stop
 
     @section('content')
@@ -34,7 +34,7 @@
 
         <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js" defer></script>
 
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" defer></script>
+        <script src="//cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js" defer></script>
         <script>
 
 jQuery(function() {
