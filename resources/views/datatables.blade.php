@@ -31,16 +31,15 @@
         </div>
     @stop
     @section('scripts')
-        <script src="//code.jquery.com/jquery.js"></script>
 
-        <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+        <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js" defer></script>
 
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" defer></script>
         <script>
 
-        $(function() {
+jQuery(function() {
 
-            $('#users-table').DataTable({
+            jQuery('#users-table').DataTable({
 
                 processing: true,
 
