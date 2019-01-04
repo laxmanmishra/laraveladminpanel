@@ -27,7 +27,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fa fa-dashboard"></i>
+              <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Starter Pages
                 <i class="right fa fa-angle-left"></i>
@@ -36,13 +36,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="#" class="nav-link active">
-                  <i class="fa fa-circle-o nav-icon"></i>
+                  <i class="far fa-circle nav-icon"></i>
                   <p>Active Page</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
+                  <i class="far fa-circle nav-icon"></i>
                   <p>Inactive Page</p>
                 </a>
               </li>
@@ -58,10 +58,18 @@
             </a>
           </li>
           <li class="nav-item">
+          <a href="{{ url( 'posts/create' ) }}" class="nav-link">
+              <i class="nav-icon fab fa-blogger-b"></i>
+              <p>
+                Posts
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="#" class="nav-link"  href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-              <i class="fa fa-power-off" aria-hidden="true"></i>
+              <i class="nav-icon fa fa-power-off" aria-hidden="true"></i>
               <p>
                   {{ __('Logout') }}
               </p>

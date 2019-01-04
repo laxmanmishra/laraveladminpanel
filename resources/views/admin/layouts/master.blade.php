@@ -27,7 +27,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    @yield('content')
+    <div class="col-12">
+      @include('inc.messages')
+    </div>
+      @yield('content')
   </div>
   <!-- /.content-wrapper -->
 

@@ -31,4 +31,6 @@ Route::get('get-data-my-datatables', ['as'=>'get.data','uses'=>'MyDatatablesCont
 Route::resource('posts', 'PostsController');
 
 
+Route::get('get-posts-my-datatables', ['as'=>'get.posts','uses'=>'PostsController@getData']);
+
 
