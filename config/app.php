@@ -181,6 +181,8 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         // Ckeditor
         Unisharp\Ckeditor\ServiceProvider::class,
+        //Passport Service
+        Laravel\Passport\PassportServiceProvider::class,
 
 
 

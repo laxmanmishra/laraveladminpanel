@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "485ce66f-6c85-4478-af5d-27b74965191e",
+		"name": "laravelapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://lmapp.localhost/oauth/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "Gn1tEG4JPpNKpJdNgxww2ORRgXc2ZNx4i1QP2iix",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "gaurav@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://lmapp.localhost/oauth/token",
+					"protocol": "http",
+					"host": [
+						"lmapp",
+						"localhost"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": "Laravel Passport Oauth Authication"
+			},
+			"response": []
+		},
+		{
+			"name": "http://lmapp.localhost/api/details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImYzN2NhZGRiMjNlZjg0MWViMzBlNDNjZmViNTM5N2Y4MTg4ZmU2OGM0Nzg4ZTkzZDE5ZWE5MzEyZGEzMDBlZWExNTEzZTNkYjk4MzQ2YTIyIn0.eyJhdWQiOiIyIiwianRpIjoiZjM3Y2FkZGIyM2VmODQxZWIzMGU0M2NmZWI1Mzk3ZjgxODhmZTY4YzQ3ODhlOTNkMTllYTkzMTJkYTMwMGVlYTE1MTNlM2RiOTgzNDZhMjIiLCJpYXQiOjE1NDY3MjA5MDMsIm5iZiI6MTU0NjcyMDkwMywiZXhwIjoxNTc4MjU2OTAzLCJzdWIiOiI5MyIsInNjb3BlcyI6W119.fXu7oS8kWC63-krrCim785fijhuxtZ89kFDDinaL7OMuwLcap2GeyENk0_wSaBkmPDvEsT55pKYoak1XmS6W3D8Hr4fB4Jnmn6AHyT1w69fYK1v_fPhlweO5QU2hCn0RR5yXInlWTeKhWLgBbwaGl28L8h_APo8FLY-BnDxU4FVlOg-a5FUOUS6-5NsgxZDAvR9LGTdaOe2KOVsvB6zvoiU3zw_urS-8oDJ4JQ8XPn5yAv7q4RcqxsKPwxe_jQOA2wavQQtAtNNa3uSseCFtBRiVgR0zP0R-miksLtaa5uCDpDDk5lsaDizopCRUAszTQ2WCUFFCPsKqKP3-4JcZD2J1iWbya3Aa-fbEVXKB6PHS5gfPYkm_XdXCs9XLpmFDBdEaO4JBXqFQFmr63_RZL5Rz1TGawhLo35ca0pjuGmfP1u79qMcmgN2KzA1bQFieBmm5SYFC26TNXF8izrQ2wyZMfOSHfs_3DJk1D5-DBT8scBQ9_08wqOR0AeXDKy21W5mUj_fJsw2mmUANwxdRCgmlqGLaFujpbSLdmsOi3xrItLY14qnFyUe9Q2lHp2JDLmMaMz95tlCJjNOgAvmIuDmJtlQ8GuSzT9m_pX68Yin4eJuPGkbG72khpUqw7D5Wh79NgMb4GaTjW6bou6gcqy7UAq2sOYsdJ7qFmqYynYg"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://lmapp.localhost/api/details",
+					"protocol": "http",
+					"host": [
+						"lmapp",
+						"localhost"
+					],
+					"path": [
+						"api",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lmapp.localhost/api/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Gaurav",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "gaurav@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://lmapp.localhost/api/register",
+					"protocol": "http",
+					"host": [
+						"lmapp",
+						"localhost"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lmapp.localhost/api/user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjMyYTM4OTUyYmRiNGVlNzRjOGFjNTQ0MmU1MTc5NWE0YjIzZjI2NGY2NzM0NDRiNDYyNzAwNTAwNGUyMGUwMzk2OGZkZDYwNTZhNDY5Nzg3In0.eyJhdWQiOiIyIiwianRpIjoiMzJhMzg5NTJiZGI0ZWU3NGM4YWM1NDQyZTUxNzk1YTRiMjNmMjY0ZjY3MzQ0NGI0NjI3MDA1MDA0ZTIwZTAzOTY4ZmRkNjA1NmE0Njk3ODciLCJpYXQiOjE1NDY3MjAzMzUsIm5iZiI6MTU0NjcyMDMzNSwiZXhwIjoxNTc4MjU2MzM1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.texDBQsy38JN14v0q319fRCuUnIpe_kxo9G8VUS-cKKiszaA2SvREpsRULtpFHnWtdxUpfzqnaAC2qAfx7H5jw87DIUMhRxMXI2QcTJf__CinXW-i-2n5QQ6PB2KO1W7jSLwFeLmjkMNKXBztm8yxr8BXV8E7jR5OkB22MEmhnKD2Eyxa9kxBiI-VL9SFCJViz65HD8g49UuN0DwI_clfQnea24q6S2aUl9WKv95XAfY-_kn5mu5aUquM8CErN4TjuAZVgnG3a_odYK7nXuABqr5-Ewdx4gwPYk2DVF_zBp2R9BGDTYwTZ0Rduu7VxsfNZsZjBQ41_yR5MtTDeW0jWRoy6ckksUGQdDBnuYXBJ4A3GMmRnNFLSbf--QlHOOcVe4X-9uqDDN8A3FIcri4qslPLh15YIRuHVzOsodtwDoarl47-NPx5sVLmXdGtrmSVDZeG-nGi9sWKmg4s8g4XPGVGbrTCFaro6W_S6q6izzgOH_a8W0IJGFARc_fepJQ3sZiDnaTIOoWVwHYDIZgbKFIemPaFdCrxD14TeVAg8GnHQwW4DvP95BxYDTgZv4VaZ2qj9muMQFE7FtKFUGwF3un7WYgSjniCNzORWyIrP1BVvuIectD7a6vO9lAq0W9H2f_yeq4Pi79E6guBpw0qk32FN5hV0uw2T7CPtEnTDM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://lmapp.localhost/api/user",
+					"protocol": "http",
+					"host": [
+						"lmapp",
+						"localhost"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
